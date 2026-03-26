@@ -1,0 +1,1 @@
+int encontrar_numero(int arr[], int tamanho, int numero);
