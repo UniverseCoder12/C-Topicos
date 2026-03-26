@@ -39,34 +39,10 @@ int main() {
             printf("%d ten\n", hst[j]);
         }
 
-        printf("Jogar novamente? (s/n): ");
+        printf("Jogar novamente? (s/n): \n");
         scanf(" %c", &opc);
 
     } while (opc == 's');
-
-    return 0;
-}
-    printf("Baixo\n");
-            }
-
-        } while (palpite != numero);
-
-        printf("Acertou em %d tentativas\n", tentativas);
-
-        if (i < 10) {
-            historico[i] = tentativas;
-            i++;
-        }
-
-        printf("Historico:\n");
-        for (int j = 0; j < i; j++) {
-            printf("%d tentativas\n", historico[j]);
-        }
-
-        printf("Jogar novamente? (s/n): ");
-        scanf(" %c", &opcao);
-
-    } while (opcao == 's');
 
     return 0;
 }
