@@ -18,18 +18,31 @@ int main()
     int tmnimpar = 0;
 
     // adicionando elementos dinamicamente
-    for(int i = 0; i < 5; i++) {
-        tmnpar++;
-        lista = realloc(lista, tamanho * sizeof(int));
-        lista[tamanho - 1] = i * 10;
+    for(int i = 0; i < 10; i++) {
+        if (nums[i] % 2 == 0)
+        {
+            tmnpar++;
+            pares = realloc(pares, tmnpar * sizeof(int));
+            pares[tmnpar - 1] = nums[i];
+        }
+        else
+        {
+            tmnimpar++;
+            impares = realloc(impares, tmnimpar * sizeof(int));
+            impares[tmnimpar - 1] = nums[i];
+        }
     }
 
-    for(int i = 0; i < tamanho; i++) {
-        printf("%d\n", lista[i]);
+    printf("pares: \n");
+    for(int i = 0; i < tmnpar; i++) 
+    {
+        printf("%d\n", pares[i]);
     }
 
-    free();
+    printf("impares: \n");
+    for(int i = 0; i < tmnimpar; i++) 
+    {
+        printf("%d\n", impares[i]);
+    }
     return 0;
-
-
 }
