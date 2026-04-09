@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main() {
     int v1[5]; 
     int v2[5]; 
