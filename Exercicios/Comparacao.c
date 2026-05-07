@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int v1[5]; 
     int v2[5]; 
     int intersec[5];
@@ -21,18 +22,22 @@ int main() {
     }
 
     for(int i = 0; i < 5; i++) {
-        for(int j = 0; j < 5; j++) {
-            if(v1[i] == v2[j]) {
-                
+        for(int j = 0; j < 5; j++) 
+        {
+            if(v1[i] == v2[j]) 
+            {    
                 int existe = 0;
-                for(int m = 0; m < k; m++) {
-                    if(intersec[m] == v1[i]) {
+                for(int m = 0; m < k; m++) 
+                {
+                    if(intersec[m] == v1[i]) 
+                    {
                         existe = 1;
                         break;
                     }
                 }
 
-                if(!existe) {
+                if(!existe) 
+                {
                     intersec[k] = v1[i];
                     k++;
                 }
